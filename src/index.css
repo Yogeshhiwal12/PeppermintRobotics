@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* styles.css */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.text-animation {
+  overflow: hidden; /* Hide overflowing characters */
+  white-space: nowrap; /* Prevent line breaks */
+  display: inline-block; /* Display as inline element */
+  animation: typing 2s steps(40), blink-caret 0.5s step-end infinite alternate;
+  /* Use steps() for letter-by-letter effect */
+}
+
+@keyframes blink-caret {
+  to {
+    border-right-color: transparent;
+  }
+}
